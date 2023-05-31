@@ -75,9 +75,28 @@ const tabs = document.querySelectorAll('[data-target'),
       })
 
 /*==================== SERVICES MODAL ====================*/
+const modelViews = document.querySelectorAll('.services_model'),
+      modelBtns = document.querySelectorAll('.services_button'),
+      modelCloses = document.querySelectorAll('.services_model-close')
 
+      let modal = function(modalClick){
+        modelViews[modalClick].classList.add('active-mode')
+      }
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+      modelBtns.forEach((modelBtns,i)=>{
+        modelBtns.addEventListener('click',()=>{
+            modal(i)
+        })
+      })
+
+      modelCloses.forEach((modalClose) => {
+        modalClose.addEventListener('click',() => {
+            modelViews.forEach((modalView)=> {
+                 modalView.classList.remove('active-mode')
+        })
+       })
+      })
+ /*==================== PORTFOLIO SWIPER  ====================*/
 
 
 /*==================== TESTIMONIAL ====================*/
