@@ -403,6 +403,7 @@ font-size: 1.25rem;
   display: flex;
   justify-content: center;
 }
+
 /*==================== SKILLS ====================*/
 
 .skills__container{
@@ -715,6 +716,10 @@ font-size: 1.25rem;
  .portfolio__description{
   margin-bottom: var(--mb-0-75);
  }
+
+ .portfolio__button{
+  height: 0.2em;;
+}
 
  .portfolio__button:hover .button__icon{
   transform: translateX(0.25rem);
