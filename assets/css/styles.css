@@ -403,6 +403,7 @@ font-size: 1.25rem;
   display: flex;
   justify-content: center;
 }
+
 /*==================== SKILLS ====================*/
 
 .skills__container{
@@ -563,6 +564,13 @@ font-size: 1.25rem;
   color:var(--text-color-light);
 }
 
+
+.qualification__pointer{
+  font-size:var(--smaller-font-size);
+  color:var(--text-color-light);
+}
+
+
 .qualification__rounder{
   display: inline-block;
   width: 13px;
@@ -590,7 +598,20 @@ font-size: 1.25rem;
   color: var(--first-color);
 }
 
+.education_logos{
+  width: 50%;
+  aspect-ratio:3/2;
+  object-fit: contain;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.qualification__pointer-icon{
+  color: rgb(196, 196, 27);
+  size: 100px;
+}
 
 
 
@@ -686,6 +707,17 @@ font-size: 1.25rem;
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
+
+.service_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.services_udemy-cert{
+  width: 50%;
+}
+
 /* Active Modal */
 .active-mode{
   opacity: 1;
@@ -715,6 +747,10 @@ font-size: 1.25rem;
  .portfolio__description{
   margin-bottom: var(--mb-0-75);
  }
+
+ .portfolio__button{
+  height: 0.2em;;
+}
 
  .portfolio__button:hover .button__icon{
   transform: translateX(0.25rem);
@@ -1061,6 +1097,12 @@ font-size: 1.25rem;
 
     .nav_log{
       color: #fff;
+    }
+
+    .services_model-content{
+      display: flex;
+      align-items: center;
+      
     }
 
    }
