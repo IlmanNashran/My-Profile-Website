@@ -302,6 +302,10 @@ color: var(--first-color);
   font-size: var(--big-font-size);
 }
 
+.home__title p{
+  display: inline;
+}
+
 .home__subtitle{
   font-size: var(--h3-font-size);
   color:var(--text-color);
@@ -397,6 +401,9 @@ font-size: 1.25rem;
 .about__description{
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  text-align: center;
+
+  padding: 10px;
 }
 
 .about__buttons{
