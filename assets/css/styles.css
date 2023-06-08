@@ -303,7 +303,7 @@ color: var(--first-color);
 }
 
 .home__title p{
-  display: inline;
+  display: inline; 
 }
 
 .home__subtitle{
