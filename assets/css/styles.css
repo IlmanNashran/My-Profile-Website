@@ -259,6 +259,9 @@ color: var(--first-color);
 
 .home__container{
    gap:1rem;
+   top: 100px;
+   opacity: 0;
+   transition: top 1s ease-out, opacity 1s ease-out;
 }
 
 .home__content{
@@ -1114,10 +1117,40 @@ font-size: 1.25rem;
 
    }
 
-  
-
 
 
 }
 
+.section {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+
+.show-animation {
+  top: 0;
+  opacity: 1;
+  transition: top 1s ease-out, opacity 1s ease-out;
+}
+
+@media (max-width: 767px) {
+  .qualification__data {
+    grid-template-columns: 1fr; /* Display one qualification per row */
+    row-gap: 1.5rem; /* Add some vertical spacing between qualifications */
+  }
+
+  .qualification__title,
+  .qualification__subtitle,
+  .qualification__calender,
+  .qualification__pointer {
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  .education_logos {
+    width: 70%; /* Adjust the logo size on smaller screens */
+  }
+}
 /* For large devices */

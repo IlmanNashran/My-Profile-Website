@@ -138,12 +138,26 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
-function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
+$(document).ready(function() {
+    "use strict";
 
+    function animateOnScroll(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show-animation");
+                observer.unobserve(entry.target);
+            }
+        });
+    }
 
-/*==================== DARK LIGHT THEME ====================*/ 
+    const sections = document.querySelectorAll(".section");
+
+    const sectionObserver = new IntersectionObserver(animateOnScroll, {
+        root: null,
+        threshold: 0.3,
+    });
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+});
