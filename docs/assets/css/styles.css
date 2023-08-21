@@ -277,7 +277,7 @@ color: var(--first-color);
 }
 
 .home__social-icon{
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--first-color);
 }
 
@@ -457,10 +457,22 @@ font-size: 1.25rem;
   margin-bottom: var(--mb-0-5);
 }
 
+.skill__icon__title {
+  display: flex; /* Display the image and title as flex items */
+  align-items: center; /* Align items vertically */
+  margin-right: 8px;  /* Add space between image and title */
+}
+
+.skill__icon__title img {
+  width: 30px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+
 .skills__name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-
 }
 
 .skills__bar,
@@ -1104,7 +1116,7 @@ font-size: 1.25rem;
     }
 
     .nav_log{
-      color: #fff;
+      color: #180b0b;
     }
 
     .services_model-content{
