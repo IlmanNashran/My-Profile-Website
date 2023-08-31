@@ -794,8 +794,33 @@ font-size: 1.25rem;
   right: -.5rem;
  }
 /*==================== PROJECT IN MIND ====================*/
+.mobileApp__container{
+  padding: 0 1.5rem;
+ }
+
+ .mobileApp__container{
+  gap:1.5rem;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.mobileApp__content{
+  grid-template-columns: .5fr 3fr;
+  padding-top:3.5rem;
+  align-items: center;
 
 
+}
+
+.mobileApp__content:hover{
+  box-shadow: 0 4px 8px rgb(0, 0,0,.15);
+}
+
+.img-fluid{
+  width:200px;
+  border-radius:.10rem;
+  justify-self:center;
+  align-self:center;
+}
 /*==================== TESTIMONIAL ====================*/
 
 
@@ -966,6 +991,14 @@ font-size: 1.25rem;
   .footer__container{
     grid-template-columns: repeat(2,1fr);
   }
+
+  .mobileApp__container{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+
+
+  
   
   .qualification__section{
     display:grid;
@@ -988,6 +1021,10 @@ font-size: 1.25rem;
 
   .section{
     padding:6rem 0 2rem;
+  }
+
+  .mobileApp__container{
+    grid-template-columns: repeat(1,1fr);
   }
 
   .section__subtitle{
@@ -1125,7 +1162,13 @@ font-size: 1.25rem;
       
     }
 
+    .mobileApp__container {
+      grid-template-columns: repeat(1, 1fr); /* Change the grid layout for larger screens */
+    }
+
    }
+
+
 
 
 
@@ -1147,7 +1190,6 @@ font-size: 1.25rem;
 }
 
 /* For large devices */
-
 
 
 /* You can also add more styles for the image inside the blob */

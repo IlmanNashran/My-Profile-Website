@@ -112,7 +112,19 @@ const modelViews = document.querySelectorAll('.services_model'),
   });
 
 /*==================== TESTIMONIAL ====================*/
+let swiper2 = new Swiper('.mobileApp__container', {
+    cssMode: true,
+    loop:true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
 
+  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
